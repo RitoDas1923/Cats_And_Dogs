@@ -1,11 +1,41 @@
 <html>  
 <head>  
     <title>upload</title>  
+    <style>
+        body {
+            margin:0px;
+            height:100vh;
+            background-color: #6667AB;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+        .centre{
+            height:100%;
+            width:100%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .form-input{
+            width:400px;
+            padding:200px;
+            background-color:#241571;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-radius: 25px;
+        }
+    </style>
 </head>  
-<body>  
-    <form action = "/success" method = "post" enctype="multipart/form-data">  
-        <input type="file" name="file" />  
-        <input type = "submit" value="Upload">  
-    </form>  
+<body>
+    <div class="centre">
+        <div class="form-input">
+            <form action = "/success" method = "post" enctype="multipart/form-data">  
+                <input type="file" name="file" />  
+                <input type = "submit" value="Upload">  
+            </form>
+        </div>  
+    </div>  
 </body>  
 </html>  
