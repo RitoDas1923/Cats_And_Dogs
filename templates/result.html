@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        {% if pred>0.5 %}
+            <h1>This is a DOG</h1>
+            <h1>Accuracy : {{acc[0][0]*100}}%</h1>
+        {% else %}
+            <h1>This is a CAT</h1>
+            <h1>Accuracy : {{acc[0][0]*100}}%</h1>
+        {% endif %}
+        <a href='/'>CLick here to go back</a>
+    </body>
+</html>
